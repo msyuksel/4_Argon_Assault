@@ -1048,6 +1048,10 @@ MonoBehaviour:
   speed: 15
   xRange: 5.5
   yRange: 3
+  positionPitchFactor: -6
+  controlPitchFactor: -20
+  positionYawFactor: 5
+  controlRollFactor: -30
 --- !u!1001 &188823022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10071,7 +10075,7 @@ PrefabInstance:
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.05
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
@@ -10086,22 +10090,22 @@ PrefabInstance:
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.09189031
+      value: -0.09186802
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010047652
+      value: 0.00047315535
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0014603827
+      value: -0.0023428923
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9957174
+      value: 0.9957684
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
@@ -10116,7 +10120,7 @@ PrefabInstance:
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.182
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 621649071939433858, guid: 13e3276fa0ebd5342aee417e44f4e62b,
         type: 3}

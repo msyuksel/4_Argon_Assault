@@ -11,7 +11,13 @@ public class Player : MonoBehaviour
     [Tooltip("in m")][SerializeField] float xRange = 5.5f;
     [Tooltip("in m")] [SerializeField] float yRange = 3f;
 
+    [SerializeField] float positionPitchFactor = -5f;
+    [SerializeField] float controlPitchFactor = -10f;
 
+    [SerializeField] float positionYawFactor = 5f;
+    [SerializeField] float controlRollFactor = -20f;
+
+    float xThrow, yThrow;
 
     // Start is called before the first frame update
     void Start()
@@ -26,10 +32,22 @@ public class Player : MonoBehaviour
         ProcessRotation();
     }
 
+    private void ProcessRotation()
+    {
+        float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
+        float pitchDueToControlThrow = yThrow * controlPitchFactor;
+
+        float pitch = pitchDueToPosition + pitchDueToControlThrow;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlRollFactor;
+
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
     private void ProcessTranslation()
     {
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
 
         float xOffset = xThrow * speed * Time.deltaTime;
         float yOffset = yThrow * speed * Time.deltaTime;
@@ -42,9 +60,5 @@ public class Player : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
-
-    private void ProcessRotation()
-    {
-        transform.localRotation = Quaternion.Euler(0f, 90f, 0f);
-    }
+   
 }
