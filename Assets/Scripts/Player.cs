@@ -7,8 +7,8 @@ using UnityStandardAssets.CrossPlatformInput;
 public class Player : MonoBehaviour
 {
 
-    [Tooltip("in ms^-1")][SerializeField] float speed = 15f;
-    [Tooltip("in m")][SerializeField] float xRange = 5.5f;
+    [Tooltip("in ms^-1")] [SerializeField] float speed = 15f;
+    [Tooltip("in m")] [SerializeField] float xRange = 5.5f;
     [Tooltip("in m")] [SerializeField] float yRange = 3f;
 
     [SerializeField] float positionPitchFactor = -5f;
@@ -22,7 +22,12 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        print("Player hit something");
     }
 
     // Update is called once per frame
