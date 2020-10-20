@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
 
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float controlPitchFactor = -10f;
-
     [SerializeField] float positionYawFactor = 5f;
     [SerializeField] float controlRollFactor = -20f;
 
@@ -25,9 +24,9 @@ public class Player : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        print("Player hit something");
+        print("Player triggered something");
     }
 
     // Update is called once per frame
