@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 178360892}
   - component: {fileID: 7329037280275553745}
   - component: {fileID: 178360891}
+  - component: {fileID: 1573455925}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 0
 --- !u!114 &178360891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +133,18 @@ MonoBehaviour:
   controlPitchFactor: -20
   positionYawFactor: 7.06
   controlRollFactor: -30
+--- !u!114 &1573455925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625211954718133324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a0641b7277b5b4c8aeb34ef0024df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5283438804363800384
 PrefabInstance:
   m_ObjectHideFlags: 0
