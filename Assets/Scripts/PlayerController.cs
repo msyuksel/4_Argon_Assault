@@ -6,6 +6,9 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
+    
+    // todo work-out why sometimes slow on first play of scene
+
     [Header("General")]
     [Tooltip("in ms^-1")] [SerializeField] float controlSpeed = 15f;
     [Tooltip("in m")] [SerializeField] float xRange = 5.5f;
