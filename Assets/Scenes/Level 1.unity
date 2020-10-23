@@ -10430,6 +10430,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 5283438804267405070, guid: 13e3276fa0ebd5342aee417e44f4e62b,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8141572480291009083, guid: 13e3276fa0ebd5342aee417e44f4e62b,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e3276fa0ebd5342aee417e44f4e62b, type: 3}
 --- !u!1001 &9112457643883767548
