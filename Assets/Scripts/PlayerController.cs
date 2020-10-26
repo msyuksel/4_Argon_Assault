@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using static UnityEngine.ParticleSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
-    
+
     // todo work-out why sometimes slow on first play of scene
 
     [Header("General")]
     [Tooltip("in ms^-1")] [SerializeField] float controlSpeed = 15f;
     [Tooltip("in m")] [SerializeField] float xRange = 5.5f;
     [Tooltip("in m")] [SerializeField] float yRange = 3f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
@@ -32,6 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
 
@@ -68,5 +72,55 @@ public class PlayerController : MonoBehaviour
 
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
-   
+
+    void ProcessFiring()
+    {
+        bool buttonIsDown = CrossPlatformInputManager.GetButton("Fire1");
+
+        int boolValue = buttonIsDown ? 1 : 0;
+
+        foreach (GameObject gun in guns)
+
+        {
+
+            ParticleSystem bullet = gun.GetComponent<ParticleSystem>();
+
+            EmissionModule emission = bullet.emission;
+
+            emission.rateOverTime = boolValue * 10;
+
+        }
+
+    }
+    /*
+    if (CrossPlatformInputManager.GetButton("Fire1"))
+    {
+        ActivateGuns();
+    }
+    else
+    {
+        DeactivateGuns();
+    }
+    */
+
+
+    /*
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
+    }
+    */
+
+
 }
