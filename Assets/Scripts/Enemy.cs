@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         scoreBoard.ScoreHit(scorePerHit);
-        hits--;
+        hits = hits-1;
         if (hits <= 1)
         {
             KillEnemy();

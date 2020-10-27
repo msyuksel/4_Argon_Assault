@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1656308661528559462}
   - component: {fileID: 1627461962274084288}
   - component: {fileID: 1639019557362211094}
-  - component: {fileID: 992201906}
   - component: {fileID: 2057884196}
   m_Layer: 0
   m_Name: Heavy
@@ -81,22 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &992201906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652267656863290218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 813504ebd8ba1fb498942c8e6032488b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathFX: {fileID: 4345535824334161705, guid: cf076e78a3b301a46b879330f3dbae87, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 100
-  hits: 10
 --- !u!114 &2057884196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,4 +95,4 @@ MonoBehaviour:
   deathFX: {fileID: 4345535824334161705, guid: cf076e78a3b301a46b879330f3dbae87, type: 3}
   parent: {fileID: 0}
   scorePerHit: 10
-  hits: 10
+  hits: 5

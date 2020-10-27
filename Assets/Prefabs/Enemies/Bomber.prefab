@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 153449368884289988}
   - component: {fileID: 169127370607251808}
   - component: {fileID: 178467435966129272}
-  - component: {fileID: 423836530}
   - component: {fileID: 1685244505}
   m_Layer: 0
   m_Name: Bomber
@@ -81,22 +80,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &423836530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157062929895647756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 813504ebd8ba1fb498942c8e6032488b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathFX: {fileID: 4345535824334161705, guid: cf076e78a3b301a46b879330f3dbae87, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 10
-  hits: 3
 --- !u!114 &1685244505
 MonoBehaviour:
   m_ObjectHideFlags: 0
