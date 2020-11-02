@@ -3052,18 +3052,37 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 3518644794324490223, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 790681981190932336, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 7934792163854297355, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5517864250770943324, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 5050742074607218773, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4055730496662781507, guid: 29462ce8c4612f849957777779c6ec13, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References:
     - 7dae47109298af140a56e3ee4576dd10: {fileID: 1889713143}
     - 8ce205abb3559ed40947697c6ce36379: {fileID: 0}
     - 74bc6082563a7994f84ef4d4e7c881ee: {fileID: 646321113}
     - 7094a4d20e5c8ce4c95dfdf1513795c8: {fileID: 498344807}
+    - 26678b5f6e5879544a4e0a6b9dde069b: {fileID: 1034193933}
+    - 189752dd81d74b548a8d1e23adbb06e2: {fileID: 1034193933}
+    - 0dee231a42443d246812828cc51e2e01: {fileID: 1034193933}
     - e4f1a7cdb8dd8434d86799f7aa727009: {fileID: 83969565}
     - 3d58afa4ff52e224d990d377b7d12f8b: {fileID: 0}
     - 9c4695db1da78894590f078081e9fbf7: {fileID: 457737352}
+    - 7cb59662157b183439d4f9409108b3c3: {fileID: 1034193933}
+    - 3a31e6d1913f4ee489c76f1b03b9c0ae: {fileID: 1034193933}
+    - a148f82e19f4ced42822b82e81ef9ab6: {fileID: 1034193933}
     - 168eb8663d0bad94e9861928ae7f79a1: {fileID: 1091343105}
     - 1fe110be4412f4e4eb627e8e29557367: {fileID: 1878326415}
     - 42cdcbf8cd77e464a8cefc74627cdef7: {fileID: 1889713143}
+    - 30244f62352770a408f5288353ce3f36: {fileID: 1034193933}
+    - 6107cb318e5bcd142bfcadcc91434f34: {fileID: 1034193933}
+    - b4ec03bc56490fd47b38dd301f7a5f9a: {fileID: 1034193933}
     - 9f6f1b73a79a4b440a6c8c089b705026: {fileID: 870343001}
     - 1e6cad5d84527fb4b9ab51b6d5de4722: {fileID: 654440920}
     - 530ae498d97aa5c4e9185bc1f5afd883: {fileID: 1176981285}
@@ -3071,6 +3090,7 @@ PlayableDirector:
     - 2c269755c93db8545804a5ed9306a4f3: {fileID: 452852738}
     - ba4e935b2824955489ba42b4ba10e7ed: {fileID: 2114282711}
     - 083d19ebd7f7d6942b933baa3220a4ec: {fileID: 1451677847}
+    - a62debe36f2b52645b211798dbe61627: {fileID: 1034193933}
     - 40c1e94a49df7df4c833c8c794099ab8: {fileID: 1889713143}
     - 56c24fb7b31902f4eb856f228dc2d390: {fileID: 0}
     - 8a2eb82fcb6dec54bb80fa575cb1498e: {fileID: 952310189}
@@ -8115,6 +8135,120 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1033334605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034193933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034193936}
+  - component: {fileID: 1034193935}
+  - component: {fileID: 1034193934}
+  - component: {fileID: 1034193938}
+  - component: {fileID: 1034193937}
+  m_Layer: 5
+  m_Name: Slackbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1034193934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034193933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: aeb0e658a3b19ef41b799902e6e550f4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1034193935
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034193933}
+  m_CullTransparentMesh: 0
+--- !u!224 &1034193936
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034193933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1791173700}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 1024, y: -491}
+  m_SizeDelta: {x: 428.7635, y: 374.9672}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1034193937
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034193933}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!320 &1034193938
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034193933}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: b95d41d015be545448ae681be106a17b, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -8471329770042584622, guid: b95d41d015be545448ae681be106a17b, type: 2}
+    value: {fileID: 1034193937}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1055286271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8141572480291009086, guid: 13e3276fa0ebd5342aee417e44f4e62b,
@@ -10686,8 +10820,8 @@ Transform:
   m_Children:
   - {fileID: 1033334606}
   - {fileID: 2067340408}
-  - {fileID: 1010885166}
   - {fileID: 1082420935}
+  - {fileID: 1010885166}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12802,6 +12936,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 2048805627}
+  - {fileID: 1034193936}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
