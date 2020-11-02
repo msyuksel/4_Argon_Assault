@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     void ProcessFiring()
     {
+        /*
         bool buttonIsDown = CrossPlatformInputManager.GetButton("Fire1");
 
         int boolValue = buttonIsDown ? 1 : 0;
@@ -90,37 +91,24 @@ public class PlayerController : MonoBehaviour
             emission.rateOverTime = boolValue * 10;
 
         }
-
-    }
-    /*
-    if (CrossPlatformInputManager.GetButton("Fire1"))
-    {
-        ActivateGuns();
-    }
-    else
-    {
-        DeactivateGuns();
-    }
-    */
-
-
-    /*
-    private void ActivateGuns()
-    {
-        foreach (GameObject gun in guns)
+        */
+        if (CrossPlatformInputManager.GetButton("Fire1"))
         {
-            gun.SetActive(true);
+            SetGunsActive(true);
+        }
+        else
+        {
+            SetGunsActive(false);
         }
     }
 
-    private void DeactivateGuns()
+    private void SetGunsActive(bool isActive)
     {
-        foreach (GameObject gun in guns)
+        foreach (GameObject gun in guns) //may effect death FX
         {
-            gun.SetActive(false);
+            var emmissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emmissionModule.enabled = isActive;
         }
     }
-    */
-
-
+    
 }
